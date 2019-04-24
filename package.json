@@ -15,13 +15,9 @@
     "eslint": "eslint *.js",
     "pretest": "npm run lint",
     "test": "mocha tests/",
-    "cover": "nyc --reporter=html npm test",
-    "cover:cleanup": "rimraf coverage && rimraf .nyc_output",
-    "cover:archive": "cross-var \" make-dir coverage_archive/$npm_package_version && cpr coverage/* coverage_archive/$npm_package_version -o\"",
-    "cover:serve": "cross-var http-server coverage_archive/$npm_package_version -p $npm_package_config_port",
-    "cover:open": "cross-var opn http://192.168.1.54:$npm_package_config_port",
-    "precover": "npm run cover:cleanup",
-    "postcover": "npm-run-all cover:archive --parallel cover:serve cover:open"
+    "cover": "scripty",
+    "cover:serve": "scripty",
+    "cover:open": "scripty"
   },
   "keywords": [],
   "author": "jianwang",
@@ -39,6 +35,7 @@
     "nyc": "^14.0.0",
     "opn-cli": "^4.1.0",
     "rimraf": "^2.6.3",
+    "scripty": "^1.9.1",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"
   },
