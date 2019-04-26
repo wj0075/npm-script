@@ -6,6 +6,8 @@ describe('npm-script', () => {
     it('should return sum when param are number', () => {
       expect(add(0, 1)).to.equal(1);
       expect(add(0, 2)).to.equal(2);
+      expect(add(1, 2)).to.equal(3);
+      expect(add(2, 2)).to.equal(4);
     });
 
     it('should return NaN when param invalid', () => {

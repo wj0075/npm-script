@@ -15,6 +15,7 @@
     "eslint": "eslint *.js",
     "pretest": "npm run lint",
     "test": "mocha tests/",
+    "wtach:test": "npm t -- --watch",
     "cover": "node scripts/cover.js",
     "cover:serve": "scripty",
     "cover:open": "scripty"
