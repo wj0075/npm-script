@@ -15,6 +15,8 @@
     "eslint": "eslint *.js",
     "pretest": "npm run lint",
     "test": "mocha tests/",
+    "precommit": "npm run lint",
+    "prepush": "npm run test",
     "watch": "npm-run-all --parallel watch:*",
     "watch:lint": "onchange -i \"**/*.js\"  \"**/*.less\" -- npm run lint",
     "wtach:test": "npm t -- --watch",
