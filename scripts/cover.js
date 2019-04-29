@@ -1,4 +1,4 @@
-const {rm, cp, mkdir, exec, echo} = require('shelljs');
+const {rm, cp, mkdir, exec} = require('shelljs');
 const chalk = require('chalk');
 
 console.log(chalk.green('1. remove old voverage reports...'));
