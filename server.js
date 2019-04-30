@@ -12,6 +12,5 @@ app.listen(port, err => {
     console.log('server start error', err);
     process.exit(1);
   }
-
   console.log(`server started at port ${port}`);
 })
